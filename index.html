@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    cursor: pointer;
+    width: 10vw;
+    height: 10vw;
+    font-family: sans-serif;
+    font-size: 6vw;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5vw solid white;
+    background-color: thistle;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: sans-serif;
+    font-weight: 700;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    letter-spacing: 1vw;
+    background-color: pink;
+    color: white;
+    border-radius: 1vw;
+}
+
+#all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+#line{
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    border-radius: 1vw;
+}
+
+
+#line1{
+    width: 1vw;
+    height: 30vw;
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    border-radius: 1vw;
+}
+
+.col:hover{
+    background-color: pink;
+    color: white;
+    border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="h1">SAAD</h1>
+        <div id="all">
+        <div class="row">
+                <div id="line"></div>
+                <div id="line1"></div>
+                  <div class="col" id="0" onclick="check(this)"></div>
+                  <div class="col" id="1" onclick="check(this)"></div>
+                  <div class="col" id="2" onclick="check(this)"></div>
+        </div>
+        <div class="row">
+                  <div class="col" id="3" onclick="check(this)"></div>
+                  <div class="col" id="4" onclick="check(this)"></div>
+                  <div class="col" id="5" onclick="check(this)"></div>
+        </div>
+        <div class="row">
+                  <div class="col" id="6" onclick="check(this)"></div>
+                  <div class="col" id="7" onclick="check(this)"></div>
+                  <div class="col" id="8" onclick="check(this)"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
